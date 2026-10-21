@@ -2,6 +2,7 @@ import { PluginSettingTab, type SettingDefinitionItem } from 'obsidian';
 import { sponsorsSettingItems } from './license/github-obsidian';
 import { PRO_ONE_TIME_URL, PRO_UI, isPro } from './pro';
 import type BasesDateBacklinksPlugin from './main';
+import { helloSettingItems } from './hello/settings';
 
 export class DateBacklinksSettingTab extends PluginSettingTab {
 	constructor(app: ConstructorParameters<typeof PluginSettingTab>[0], private readonly plugin: BasesDateBacklinksPlugin) {
@@ -9,6 +10,11 @@ export class DateBacklinksSettingTab extends PluginSettingTab {
 	}
 
 	getSettingDefinitions(): SettingDefinitionItem[] {
+		// The product rows, then the "More from NoteMods" card (packages/hello).
+		return [...this.productSettingDefinitions(), ...helloSettingItems()];
+	}
+
+	productSettingDefinitions(): SettingDefinitionItem[] {
 		const proLink = createFragment((fragment) => {
 			fragment.createSpan({ text: 'Pro adds week and month rollups, extra date properties and date ranges. ' });
 			fragment.createEl('a', { text: 'Get pro for $15 once', href: PRO_ONE_TIME_URL });

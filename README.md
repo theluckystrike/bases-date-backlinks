@@ -44,7 +44,7 @@ The screenshot shows sample Pro data. Pro requires the sponsorship check.
 
 ## Install
 
-When listed, find Date Property Backlinks under Settings, Community plugins, Browse. Select Install, then Enable.
+Find Date Property Backlinks under Settings, Community plugins, Browse. Select Install, then Enable.
 
 For manual installation, copy release files `main.js`, `manifest.json`, and `styles.css` into `<vault>/.obsidian/plugins/bases-date-backlinks/`. Reload and enable the plugin.
 
@@ -64,6 +64,8 @@ For existing daily notes, turn on "Show automatically in daily notes" in the plu
 The manual command "Insert date backlinks view in the current note" remains available for selected notes. It creates `Date Property Backlinks.base` and inserts its embed once. You can move the embed afterwards. Opening the Base on its own requires a daily note context.
 
 ## Settings
+
+After a minor or major update, this plugin opens one What's new tab in the background. The tab and settings card suggest other NoteMods plugins and Zovo Chat and link to notemods.com for feedback ([privacy](https://notemods.com/privacy/)). The tab sends no data. Turn the tab off in Settings.
 
 The Bases view settings have three free fields:
 

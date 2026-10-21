@@ -1,7 +1,7 @@
 {
 	"id": "bases-date-backlinks",
 	"name": "Date Property Backlinks",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"minAppVersion": "1.13.4",
 	"description": "Show notes whose date properties match a daily note in an auto-built Bases view.",
 	"author": "Michael Lip",

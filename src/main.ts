@@ -6,6 +6,8 @@ import { SPONSORS, bindPro, isPro, onProChange, resetPro } from './pro';
 import { DateBacklinksSettingTab } from './settings';
 import { DateBacklinksView, viewOptions } from './view';
 import { dailyConfig, isDailyName, type DailyConfig } from './setup';
+import { setupHello } from './hello/index';
+import WHATS_NEW from './whats-new.json';
 
 const PRO_TICK_MS = 6 * 60 * 60 * 1000;
 
@@ -22,6 +24,8 @@ export default class BasesDateBacklinksPlugin extends Plugin {
 
 
 	async onload(): Promise<void> {
+		// First: "What's new" reads its state before the settings load (packages/hello). It does not wait.
+		setupHello(this, WHATS_NEW);
 		const saved: unknown = await this.loadData();
 		this.settings.autoShow = !!saved && typeof saved === 'object' && 'autoShow' in saved && saved.autoShow === true;
 		await this.readDailyConfig();
