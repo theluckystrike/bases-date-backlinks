@@ -1,16 +1,10 @@
 {
 	"id": "bases-date-backlinks",
 	"name": "Date Property Backlinks",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"changes": [
-		"New Send feedback command. It opens a page where you can report a problem or suggest an idea.",
-		"Adds Date Property Backlinks.",
-		"Adds one-time daily template setup, automatic daily views, pane-local dates and matching labels."
-	],
-	"changes_user": [
-		"New Send feedback command. It opens a page where you can report a problem or suggest an idea.",
-		"Set up your daily note template once, or let existing daily notes show matching notes with no embed.",
-		"Each pane uses the date of its own daily note, so split panes can show different days."
+		"The Pro notice of Date Property Backlinks now says that one payment turns on Pro in every NoteMods plugin.",
+		"The package file now names the public repository of the plugin."
 	],
 	"tip": "A list date property matches when any date in the list falls on the daily note date.",
 	"thanks": "Hi, I am Michael, a solo developer in Poland. Date Property Backlinks is one of over 100 small plugins that I make. Thank you for using it with your daily notes.",

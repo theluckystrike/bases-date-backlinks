@@ -1,5 +1,11 @@
 # bases-date-backlinks
 
+## 1.2.1
+
+### Patch Changes
+
+- 1499b68: The Pro notice of Date Property Backlinks now says that one payment turns on Pro in every NoteMods plugin. The package file now names the public repository of the plugin.
+
 ## 1.2.0
 
 ### Minor Changes
