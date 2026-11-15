@@ -4,7 +4,7 @@
 		"type": "git",
 		"url": "theluckystrike/bases-date-backlinks.git"
 	},
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"private": true,
 	"description": "Show notes whose date properties match a daily note in an auto-built Bases view.",
 	"main": "main.js",

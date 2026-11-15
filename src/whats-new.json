@@ -1,7 +1,7 @@
 {
 	"id": "bases-date-backlinks",
 	"name": "Date Property Backlinks",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"changes": [
 		"The Pro notice of Date Property Backlinks now says that one payment turns on Pro in every NoteMods plugin.",
 		"The package file now names the public repository of the plugin."
